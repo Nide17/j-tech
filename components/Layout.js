@@ -11,7 +11,7 @@ export default function Layout({ children }) {
             <Meta />
             <div className={styles.container}>
             <TopAlert />
-                {/* <Navbar /> */}
+                <Navbar />
                 {children}
                 {/* <Footer /> */}
             </div>

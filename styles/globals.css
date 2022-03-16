@@ -1,16 +1,32 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
+  padding: 0!important;
+  margin: 0!important;
+  font-family: 'Trebuchet MS', Garamond, Georgia, Times, 'Times New Roman', serif!important
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box!important;
+}
+
+a {
+  color: inherit!important;
+  text-decoration: none!important;
+}
+
+a:hover {
+  text-decoration: none!important
+}
+
+img {
+  max-width: 100%!important;
+  display: block!important;
+}
+
+ul li.react-tabs__tab--selected {
+  background-color: rgb(3, 159, 190) !important;
+  color: #fff!important;
+  border-top: 2px solid #fff !important;
+  border-left: 2px solid #fff !important;
+  border-right: 2px solid #fff !important;
 }
