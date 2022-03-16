@@ -1,11 +1,11 @@
 .services {
   display: block;
-  background-color: rgb(238, 238, 238);
+  background-color: #100f0f;
   padding: 2rem 1rem;
 }
 
 .services h2 {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
@@ -26,13 +26,14 @@
   background-color: rgb(240, 233, 233);
   padding: 2rem;
   margin: 1rem;
-  border: 1px solid rgb(201, 201, 201);
+  border: 1px solid rgb(70, 7, 7);
   border-radius: 0.3rem;
 }
 
 .listItem:hover {
   transform: scale(1.03);
   transition: 600ms;
+  background-color: rgb(255, 255, 255);
 }
 
 .listItem a,

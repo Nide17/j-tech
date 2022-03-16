@@ -6,7 +6,7 @@ import ScrollTop from '../components/ScrollTop'
 export default function Home() {
   return (
     <>
-      {/* <About /> */}
+      <About />
       <Services />
       {/* <Contact /> */}
       {/* <ScrollTop /> */}

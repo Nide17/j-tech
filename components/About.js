@@ -8,21 +8,27 @@ export default function About() {
 
         <div className={aboutStyles.about} id="about">
 
-            <div className={aboutStyles.bio}>
+            <h2 className='py-4'>ABOUT US</h2>
 
-                <h2>A<span>bout Me</span></h2>
+            <div className={`${aboutStyles.bio} d-flex justify-content-around align-items-center`}>
+                <div className='w-50'>
+                    <p className='pb-5'>
+                        J-TECH TECHNOLOGY has been established in February 2022 to provide various ICT and technology solutions including
+                        Services activities related to copying, printing and scanning, Repair of machinery, tools and electrical equipments,
+                        Repair of electronic and optical equipments, Repair of computers and peripheral equipments,
+                        Repair of communication equipments and consumer electronics, Installation of industrial machinery and equipments, ICT
+                        Consultancy, vending and supplying ICT tools, devices and equipments.
+                    </p>
 
-                <p>I am a Full-stack Software Developer from Kigali-Rwanda, specializing mostly with the front-end and the back-end development. Experienced with all stages of the development cycle for dynamic software projects. I love to solve problems through software using HTML/CSS, React.js, Redux, Next.js, Bootstrap on the front-end to create nice UI for the web; and Node.js, Express.js, Python/Flask, MongoDB and PostgreSQL for back-end development</p>
+                    <strong>The company is organized by team of professionals, who are very experienced in the field of ICT, 
+                    electricity and electronics in order to provide full package of solutions and hence quality services.
+                    </strong>
 
-                <small>
-                    <blockquote>
-                        <Link href="/aboutdocs"><a className='docs'>Find my resume and more ...</a></Link>
-                    </blockquote>
-                </small>
-            </div>
+                </div>
+                <div className={aboutStyles.profilePic}>
+                    <Image src="/images/jtechltd.jpg" alt="profilepic" width={560} height={480} />
+                </div>
 
-            <div className={aboutStyles.profilePic}>
-                <Image src="/images/profilepic.jpg" alt="profilepic" width={300} height={300} />
             </div>
         </div>)
 };
