@@ -1,24 +1,15 @@
-.projects {
+.services {
   display: block;
-  background-color: #fff;
+  background-color: rgb(238, 238, 238);
   padding: 2rem 1rem;
 }
 
-.projects h2 {
-  color: #1b4f72;
-  text-align: left;
-  margin-left: 12rem;
-  margin-bottom: 3rem;
+.services h2 {
+  color: #000000;
+  text-align: center;
 }
 
-.projects h2 span {
-  text-decoration-line: underline;
-  text-underline-offset: 0.4rem;
-  text-decoration-thickness: 0.3rem;
-  text-decoration-color: rgb(3, 159, 190);
-}
-
-.projectsList {
+.servicesList {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,10 +23,10 @@
   align-items: center;
   width: 30%;
   text-align: center;
-  background-color: rgb(241, 240, 240);
-  padding: 1rem;
-  margin: 0.5rem;
-  border: 1px solid rgb(226, 224, 224);
+  background-color: rgb(240, 233, 233);
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid rgb(201, 201, 201);
   border-radius: 0.3rem;
 }
 
@@ -57,9 +48,11 @@
 
 .listItem h5 {
   color: rgb(3, 159, 190);
-  margin: 0.5rem auto;
+  margin: 0 auto;
+  margin-bottom: .6rem;
   text-align: center;
-  text-decoration: underline;
+  font-size: 1.5rem;
+  height: 4rem;
 }
 
 .toolsBtn {
@@ -78,17 +71,17 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .projects {
+  .services {
     padding: 1rem 0.5rem;
   }
 
-  .projects h2 {
+  .services h2 {
     text-align: center;
     margin-left: 0;
     margin-bottom: 1rem;
   }
 
-  .projects h2 span {
+  .services h2 span {
     text-underline-offset: 0.3rem;
     text-decoration-thickness: 0.2rem;
   }

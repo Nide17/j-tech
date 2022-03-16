@@ -1,121 +1,49 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import projectsStyles from '../styles/Projects.module.css'
+import servicesStyles from '../styles/Services.module.css'
 
-export default function Projects() {
+export default function Services() {
 
     return (
-        <div className={projectsStyles.projects} id="projects">
+        <div className={servicesStyles.services} id="services">
 
-            <h2>P<span>rojects</span></h2>
+            <h2 className='py-4'>OUR SERVICES</h2>
 
-            <div className={projectsStyles.projectsList}>
+            <div className={servicesStyles.servicesList}>
 
-                <div className={projectsStyles.listItem}>
-                    <Link href="/projects/elysiumgroupltd">
-                        <a>
-                            <Image src='/images/elysiumgroupltd.JPG' alt='Elysium Group Ltd' width={350} height={170}></Image>
-
-                            <h5>Elysium Group Ltd</h5>
-
-                            <div className={projectsStyles.toolsBtn}>
-                                <button className="tools-round">React.js</button>
-                                <button className="tools-round">Node.js</button>
-                                <button className="tools-round">Express.js</button>
-                                <button className="tools-round">MongoDB</button>
-                                <button className="tools-round">Bootstrap</button>
-                            </div>
-                        </a>
-                    </Link>
+                <div className={servicesStyles.listItem}>
+                    <h5>Services activities related to copying, printing and scanning</h5>
+                    <span className='w-50 mb-3 border border-bottom border-secondary'></span>
+                    <Image src="/images/4025190.jpg" alt='printing' width={400} height={280} />
                 </div>
 
-                <div className={projectsStyles.listItem}>
-                    <Link href="/projects/quizblog">
-                        <a>
-                            <Image src='/images/quizblog.JPG' alt='Quiz Blog' width={350} height={170}></Image>
-
-                            <h5>Quiz Blog</h5>
-
-                            <div className={projectsStyles.toolsBtn}>
-                                <button className="tools-round">React.js</button>
-                                <button className="tools-round">Node.js</button>
-                                <button className="tools-round">Express.js</button>
-                                <button className="tools-round">MongoDB</button>
-                                <button className="tools-round">Bootstrap</button>
-                            </div>
-                        </a>
-                    </Link>
+                <div className={servicesStyles.listItem}>
+                    <h5>Repair of machinery, tools and electrical equipments</h5>
+                    <span className='w-50 mb-3 border border-bottom border-secondary'></span>
+                    <Image src="/images/machinetools.jpg" alt='printing' width={400} height={280} />
                 </div>
 
-                <div className={projectsStyles.listItem}>
-                    <Link href="/projects/okaziyo">
-                        <a>
-                            <Image src='/images/okaziyo.JPG' alt='Okaziyo' width={350} height={170}></Image>
-
-                            <h5>Okaziyo</h5>
-
-                            <div className={projectsStyles.toolsBtn}>
-                                <button className="tools-round">React.js</button>
-                                <button className="tools-round">Node.js</button>
-                                <button className="tools-round">Express.js</button>
-                                <button className="tools-round">MongoDB</button>
-                                <button className="tools-round">Bootstrap</button>
-                            </div>
-                        </a>
-                    </Link>
+                <div className={servicesStyles.listItem}>
+                    <h5>Repair of electronic and optical equipments</h5>
+                    <span className='w-50 mb-3 border border-bottom border-secondary'></span>
+                    <Image src="/images/rack.jpg" alt='printing' width={400} height={280} />
                 </div>
 
-                <div className={projectsStyles.listItem}>
-                    <Link href="/projects/hortiprice">
-                        <a>
-                            <Image src='/images/hortiprice.JPG' alt='hortiprice' width={350} height={170}></Image>
-
-                            <h5>Hortiprice</h5>
-
-                            <div className={projectsStyles.toolsBtn}>
-                                <button className="tools-round">PHP</button>
-                                <button className="tools-round">MySQL</button>
-                                <button className="tools-round">Bootstrap</button>
-                                <button className="tools-round">HTML</button>
-                                <button className="tools-round">CSS</button>
-                            </div>
-                        </a>
-                    </Link>
+                <div className={servicesStyles.listItem}>
+                    <h5>Repair of computers and peripheral equipments</h5>
+                    <span className='w-50 mb-3 border border-bottom border-secondary'></span>
+                    <Image src="/images/motherboard.jpg" alt='printing' width={400} height={280} />
                 </div>
 
-                <div className={projectsStyles.listItem}>
-                    <Link href="/projects/paypal2">
-                        <a>
-                            <Image src='/images/paypal2.JPG' alt='paypal2' width={350} height={170}></Image>
-
-                            <h5>Paypal2</h5>
-
-                            <div className={projectsStyles.toolsBtn}>
-                                <button className="tools-round">React.js</button>
-                                <button className="tools-round">HTML</button>
-                                <button className="tools-round">CSS</button>
-                                <button className="tools-round">Bootstrap</button>
-                            </div>
-                        </a>
-                    </Link>
+                <div className={servicesStyles.listItem}>
+                    <h5>Repair of communication equipments and consumer electronics</h5>
+                    <span className='w-50 mb-3 border border-bottom border-secondary'></span>
+                    <Image src="/images/switch.jpg" alt='printing' width={400} height={280} />
                 </div>
 
-                <div className={projectsStyles.listItem}>
-                    <Link href="/projects/inyanjaui">
-                        <a>
-                            <Image src='/images/inyanjaui.JPG' alt='inyanjaui' width={350} height={170}></Image>
-
-                            <h5>Inyanjaui</h5>
-
-                            <div className={projectsStyles.toolsBtn}>
-                                <button className="tools-round">React.js</button>
-                                <button className="tools-round">Redux</button>
-                                <button className="tools-round">Reactstrap</button>
-                                <button className="tools-round">Bootstrap</button>
-                                <button className="tools-round">HTML/CSS</button>
-                            </div>
-                        </a>
-                    </Link>
+                <div className={servicesStyles.listItem}>
+                    <h5>Installation of industrial machinery and equipments</h5>
+                    <span className='w-50 mb-3 border border-bottom border-secondary'></span>
+                    <Image src="/images/installation2.jpg" alt='printing' width={400} height={280} />
                 </div>
 
             </div>
