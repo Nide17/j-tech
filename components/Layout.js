@@ -13,7 +13,7 @@ export default function Layout({ children }) {
             <TopAlert />
                 <Navbar />
                 {children}
-                {/* <Footer /> */}
+                <Footer />
             </div>
         </>)
 };

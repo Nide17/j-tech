@@ -1,8 +1,10 @@
 .footer {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content:center;
   text-align: center;
   background-color: rgb(255, 255, 255);
-  border-top: 1px solid rgb(3, 159, 190);
+  border-top: 1px solid brown;
 }
 
 .sitemap {
@@ -12,11 +14,11 @@
 
 .sitemapBorder {
   margin: 2rem 0 0 13rem;
-  border-left: 10px solid rgb(3, 159, 190);
+  border-left: 10px solid brown;
 }
 
 .sitemapBorder h2 {
-  color: #1b4f72;
+  color: black;
   text-align: left;
   padding: 0 0 1rem 2rem !important;
 }
@@ -25,7 +27,7 @@
   text-decoration-line: underline;
   text-underline-offset: 0.4rem;
   text-decoration-thickness: 0.3rem;
-  text-decoration-color: rgb(3, 159, 190);
+  text-decoration-color: brown;
 }
 
 .sitemapBorder ul {
@@ -39,7 +41,7 @@
   margin: 0.6rem 0.8rem;
   font-weight: bolder;
   font-size: 0.8rem;
-  color: rgb(3, 159, 190);
+  color: brown;
   text-transform: uppercase;
 }
 
@@ -56,7 +58,7 @@
 .rightPart blockquote {
   font-size: 0.7rem;
   font-weight: bolder;
-  color: rgb(3, 159, 190);
+  color: brown;
   margin-left: 5rem;
   margin-bottom: 2rem;
 }
@@ -68,31 +70,27 @@
   margin-left: 5rem;
 }
 
-.socialIcons span {
-  width: 32px;
-  height: 32px;
-  margin: 0.2rem !important;
-}
-
-.socialIcons img {
-  border: 2px solid rgb(81, 226, 255) !important;
+.socialIcons svg {
+  border: .6px solid brown !important;
   border-radius: 0.5rem;
-  background-color: aquamarine;
   padding: 0.2rem !important;
+  height: 3rem;
+  width: 3.2rem;
 }
 
-.socialIcons img:hover {
+.socialIcons svg:hover {
   transform: rotate(360deg);
   transition: 1000ms;
 }
 
 .copyright {
-  font-size: 0.9rem;
-  line-height: 1.5;
+  font-size: 0.7rem;
+  line-height: 1.2;
   font-weight: bolder;
-  margin: 1rem auto;
-  margin-left: 5rem;
-  color: #164564;
+  text-align: center;
+  color: brown;
+  background-color: black;
+  padding: 0.3rem 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -149,7 +147,7 @@
     text-align: center;
   }
 
-  .socialIcons img {
+  .socialIcons svg {
     padding: 0.2rem !important;
   }
 

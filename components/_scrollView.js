@@ -1,4 +1,5 @@
-import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowUpLong } from '@fortawesome/free-solid-svg-icons'
 
 const ScrollTopView = (props) => {
     const { onScroll, onVisible, visible } = props
@@ -16,8 +17,8 @@ const ScrollTopView = (props) => {
 
                 <button
                     onClick={onScroll}
-                    style={{ border: 0, background: 'transparent', display: visible ? 'inline-block' : 'none', borderRadius: 5 }}>
-                    <Image src='/images/top.png' alt='top' width={48} height={48} />
+                    style={{ padding: '5px 12px', border: '1px solid grey', borderRadius: '50%', background: 'transparent', display: visible ? 'inline-block' : 'none', color: 'brown' }}>
+                    <FontAwesomeIcon icon={faArrowUpLong} />
                 </button>
             </div>
         </>
