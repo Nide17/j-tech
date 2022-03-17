@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <About />
       <Services />
-      {/* <Contact /> */}
+      <Contact />
       {/* <ScrollTop /> */}
     </>
   )

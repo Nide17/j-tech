@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import Image from 'next/image'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import contactStyles from '../styles/Contact.module.css'
+import MapContainer from './MapContainer'
 
 export default function Contact() {
 
@@ -48,50 +52,51 @@ export default function Contact() {
     return (
         <div className={contactStyles.contact} id="contact">
 
-            <div className={contactStyles.contactDetails}>
+            <h2 className='py-5'>CONTACT US</h2>
 
-                <h2>C<span>ontact Me</span></h2>
+            <div className={contactStyles.contactContainer}>
 
-                <div className="contactText">
+                <div className={contactStyles.contactForm}>
 
-                    <p>
-                        &quot;Want to discuss about a project, collaborate or something else? Do not hesitate to contact me, I am always open to hear from you!&quot;</p>
+                    <form onSubmit={onSubmitHandler}>
+
+                        <div className="inputRow">
+                            <input name="name" type="text" className="name" placeholder='Your Name ...' onChange={onChangeHandler} value={state.name || ""} required />
+
+                            <input name="email" type="email" className="email" placeholder='Your Email ...' onChange={onChangeHandler} value={state.email || ""} required />
+
+                            <textarea name="message" id="" cols="30" rows="6" className="message" placeholder='Your Message ...' onChange={onChangeHandler} value={state.message || ""} required></textarea>
+
+                            <button className="send-message">Send Message</button>
+                            {/* <button className="send-message" onClick={onSubmitHandler}>Send Message</button> */}
+                        </div>
+                    </form>
                 </div>
 
-                <div className={contactStyles.reachMe}>
+                <div className={contactStyles.contactDetails}>
 
-                    <div className={contactStyles.reachMeImg}>
-                        <Image src="/images/placeholder.png" alt='placeholder' width={30} height={30} />
-                        <span className={contactStyles.imgSpan}>Kigali, Rwanda</span>
+                    <div className={contactStyles.contactMap}>
+                        <MapContainer />
                     </div>
 
-                    <div className={contactStyles.reachMeImg}>
-                        <Image src="/images/gmail.png" alt='gmail' width={30} height={30} />
-                        <span className={contactStyles.imgSpan}>nidedrogba@gmail.com</span>
+                    <div className={contactStyles.reachMe}>
+
+                        <div className={contactStyles.reachMeImg}>
+                            <FontAwesomeIcon icon={faLocationDot} />
+                            <span className={contactStyles.imgSpan}>Kigali, Rwanda</span>
+                        </div>
+
+                        <div className={contactStyles.reachMeImg}>
+                            <FontAwesomeIcon icon={faEnvelope} />
+                            <span className={contactStyles.imgSpan}>nkeshimanajeanpaul402@gmail.com</span>
+                        </div>
+                        <div className={contactStyles.reachMeImg}>
+                            <FontAwesomeIcon icon={faWhatsapp} />
+                            <span className={contactStyles.imgSpan}>+250783284669</span>
+                        </div>
                     </div>
-                    <div className={contactStyles.reachMeImg}>
-                        <Image src="/images/whatsapp.png" alt='whatsapp' width={30} height={30} />
-                        <span className={contactStyles.imgSpan}>+250788551997</span>
-                    </div>
+
                 </div>
-
-            </div>
-
-            <div className={contactStyles.contactForm}>
-
-                <form onSubmit={onSubmitHandler}>
-
-                    <div className="inputRow">
-                        <input name="name" type="text" className="name" placeholder='Your Name ...' onChange={onChangeHandler} value={state.name || ""} required />
-
-                        <input name="email" type="email" className="email" placeholder='Your Email ...' onChange={onChangeHandler} value={state.email || ""} required />
-
-                        <textarea name="message" id="" cols="30" rows="6" className="message" placeholder='Your Message ...' onChange={onChangeHandler} value={state.message || ""} required></textarea>
-
-                        <button className="send-message">Send Message</button>
-                        {/* <button className="send-message" onClick={onSubmitHandler}>Send Message</button> */}
-                    </div>
-                </form>
             </div>
         </div>
     )

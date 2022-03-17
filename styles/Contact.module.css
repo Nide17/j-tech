@@ -1,33 +1,35 @@
 .contact {
   height: calc(100vh - 5rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  background-image: linear-gradient(
-    to right,
-    rgb(245, 243, 243),
-    rgba(27, 79, 114, 1)
-  );
+  padding: 1rem;
+  background-color: rgb(238, 238, 238);
 }
 
-.contactDetails {
-  width: 50%;
-  padding: 2rem 0 2rem 12rem;
+.contact h2 {
+  color: #000000;
+  text-align: center;
 }
 
-.contactDetails h2 {
-  color: #1b4f72;
-  margin-bottom: 2rem;
-}
-
-.contactDetails h2 span {
+.contact h2 span {
   text-decoration-line: underline;
   text-underline-offset: 0.4rem;
   text-decoration-thickness: 0.3rem;
   text-decoration-color: rgb(3, 159, 190);
 }
 
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.contactDetails {
+width: 50%;
+}
+
+.contactMap {
+  width: 100%;
+}
 .contactDetails p {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -42,14 +44,14 @@
   justify-content: center;
   width: fit-content;
   padding: 1rem;
-  border: 1px solid rgba(0, 212, 255, 1);
+  border: 1px solid brown;
   border-radius: 0.3rem;
   background-color: rgb(241, 240, 240);
   margin-top: 3rem;
   border-radius: 0.3rem;
   -webkit-box-shadow: 0px 4px 5px -4px #1b4f72,
     1px 1px 1px 1px rgb(220, 249, 255);
-  box-shadow: 0px 4px 5px -4px #1b4f72, 1px 1px 1px 1px rgb(12, 127, 150);
+  box-shadow: 0px 4px 5px -4px #1b4f72, 1px 1px 1px 1px rgb(108, 25, 5);
 }
 
 .reachMe:hover {
@@ -102,11 +104,11 @@ span.imgSpan {
 .contactForm form {
   padding: 2rem;
   background-color: rgb(241, 240, 240);
-  border: 3px solid rgba(0, 212, 255, 1);
+  border: 3px solid rgb(78, 67, 67);
   border-radius: 0.3rem;
   -webkit-box-shadow: 0px 10px 13px -7px #1b4f72,
     5px 5px 15px 5px rgb(220, 249, 255);
-  box-shadow: 0px 10px 13px -7px #1b4f72, 5px 5px 15px 5px rgb(12, 127, 150);
+  box-shadow: 0px 10px 13px -7px #1b4f72, 5px 5px 15px 5px rgb(28, 27, 27);
 }
 
 .contactForm form:hover {
@@ -120,7 +122,7 @@ span.imgSpan {
   width: 100%;
   margin: 1rem auto;
   padding: 0.8rem;
-  border: 2px solid rgba(0, 212, 255, 1);
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 0.2rem;
   background-color: #fff !important;
 }
@@ -143,14 +145,24 @@ span.imgSpan {
 
 .contactForm button {
   padding: 0.5rem;
-  background-color: rgba(0, 212, 255, 1);
+  background-color: rgb(108, 25, 5);
   color: rgb(241, 240, 240);
-  border: 1px solid rgba(0, 212, 255, 1);
+  border: 1px solid rgb(108, 25, 5);
   border-radius: 0.3rem;
 }
 
 @media screen and (max-width: 1024px) {
-  .contact {
+
+  .contact h2 {
+    margin-bottom: 2rem;
+  }
+
+  .contact h2 span {
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 0.2rem;
+  }
+
+  .contactContainer {
     height: fit-content;
     padding: 0 0.5rem;
     display: block;
@@ -160,15 +172,6 @@ span.imgSpan {
   .contactDetails {
     width: 100%;
     padding: 1rem;
-  }
-
-  .contactDetails h2 {
-    margin-bottom: 2rem;
-  }
-
-  .contactDetails h2 span {
-    text-underline-offset: 0.3rem;
-    text-decoration-thickness: 0.2rem;
   }
 
   .contactDetails p {
