@@ -9,7 +9,7 @@ export default function Home() {
       <About />
       <Services />
       <Contact />
-      {/* <ScrollTop /> */}
+      <ScrollTop />
     </>
   )
 }

@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import Link from 'next/link'
 import aboutStyles from '../styles/About.module.css'
 
 export default function About() {
@@ -12,7 +11,7 @@ export default function About() {
 
             <div className={`${aboutStyles.bio} d-flex justify-content-around align-items-center`}>
                 <div className='w-50'>
-                    <p className='pb-5'>
+                    <p className='pb-4'>
                         J-TECH TECHNOLOGY has been established in February 2022 to provide various ICT and technology solutions including
                         Services activities related to copying, printing and scanning, Repair of machinery, tools and electrical equipments,
                         Repair of electronic and optical equipments, Repair of computers and peripheral equipments,
