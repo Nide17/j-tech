@@ -23,13 +23,13 @@ export default function Services() {
                 </div>
 
                 <div className={servicesStyles.listItem}>
-                    <h5>Repair of electronic and optical equipments</h5>
+                    <h5>Repair of electronic devices and optical equipments</h5>
                     <span className='w-50 mb-3 border border-bottom border-secondary'></span>
                     <Image src="/images/rack.jpg" alt='printing' width={400} height={280} />
                 </div>
 
                 <div className={servicesStyles.listItem}>
-                    <h5>Repair of computers and peripheral equipments</h5>
+                    <h5>Repair of printers, computers and peripheral equipments</h5>
                     <span className='w-50 mb-3 border border-bottom border-secondary'></span>
                     <Image src="/images/motherboard.jpg" alt='printing' width={400} height={280} />
                 </div>

@@ -79,25 +79,26 @@ export default function Contact() {
                         <MapContainer />
                     </div>
 
-                    <div className={contactStyles.reachMe}>
-
-                        <div className={contactStyles.reachMeImg}>
-                            <FontAwesomeIcon icon={faLocationDot} />
-                            <span className={contactStyles.imgSpan}>Kigali, Rwanda</span>
-                        </div>
-
-                        <div className={contactStyles.reachMeImg}>
-                            <FontAwesomeIcon icon={faEnvelope} />
-                            <span className={contactStyles.imgSpan}>nkeshimanajeanpaul402@gmail.com</span>
-                        </div>
-                        <div className={contactStyles.reachMeImg}>
-                            <FontAwesomeIcon icon={faWhatsapp} />
-                            <span className={contactStyles.imgSpan}>+250783284669</span>
-                        </div>
-                    </div>
-
                 </div>
             </div>
+
+            <div className={contactStyles.reachMe}>
+
+                <div className={contactStyles.reachMeImg}>
+                    <FontAwesomeIcon icon={faLocationDot} style={{color: 'green'}} />
+                    <span className={contactStyles.imgSpan}>Kigali, Rwanda</span>
+                </div>
+
+                <div className={contactStyles.reachMeImg}>
+                    <FontAwesomeIcon icon={faEnvelope} style={{color: '#4285F4'}} />
+                    <span className={contactStyles.imgSpan}>nkeshimanajeanpaul402@gmail.com</span>
+                </div>
+                <div className={contactStyles.reachMeImg}>
+                    <FontAwesomeIcon icon={faWhatsapp} style={{color: '#25D366'}} />
+                    <span className={contactStyles.imgSpan}>+250783284669</span>
+                </div>
+            </div>
+
         </div>
     )
 };

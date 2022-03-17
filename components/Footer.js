@@ -55,7 +55,18 @@ export default function Footer() {
             </div>
 
             <div className={`${footerStyles.copyright} col-12`}>
-                Copyright © J-TECH Technology Ltd. {new Date().getFullYear()}
+                <span>
+                    Copyright © J-TECH Technology Ltd. {new Date().getFullYear()}
+                </span>
+
+                <strong>
+                    Designed and Developed by
+                    <Link href="#">
+                        <a href="http://nide-portfolio.vercel.app/" className='text-info text-underline'>
+                            &nbsp;<u>Niyomwungeri Parmenide Ishimwe</u>
+                        </a>
+                    </Link>
+                </strong>
             </div>
         </div>)
 };

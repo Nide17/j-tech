@@ -13,14 +13,16 @@
 }
 
 .sitemapBorder {
-  margin: 2rem 0 0 13rem;
-  border-left: 10px solid brown;
+  width: fit-content;
+  margin: 1rem 0 1rem 13rem;
+  border: 2px solid brown;
+  border-radius: 5px;
 }
 
 .sitemapBorder h2 {
   color: black;
   text-align: left;
-  padding: 0 0 1rem 2rem !important;
+  padding: 1rem 3rem !important;
 }
 
 .sitemapBorder h2 span {
@@ -34,7 +36,7 @@
   list-style: none;
   text-align: left;
   text-transform: capitalize;
-  padding-left: 1.3rem;
+  padding: 0 1.5rem;
 }
 
 .sitemapBorder ul li {
@@ -84,13 +86,15 @@
 }
 
 .copyright {
-  font-size: 0.7rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.8rem;
   line-height: 1.2;
-  font-weight: bolder;
+  font-weight: bold;
   text-align: center;
   color: brown;
   background-color: black;
-  padding: 0.3rem 0;
+  padding: 0.5rem 0;
 }
 
 @media screen and (max-width: 1024px) {

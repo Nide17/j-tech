@@ -11,7 +11,7 @@ const ScrollTopView = (props) => {
             <div
                 style={{
                     position: 'fixed',
-                    bottom: 10,
+                    bottom: 35,
                     right: 10
                 }}>
 
