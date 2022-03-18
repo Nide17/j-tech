@@ -26,7 +26,7 @@ export default function Footer() {
 
             <div className={`${footerStyles.rightPart} col-12 col-sm-6`}>
                 <small>
-                    <blockquote>~"Good customer service costs less than bad customer service."~ <i>Sally Gronow</i></blockquote>
+                    <blockquote>~ Good customer service costs less than bad customer service. ~ <i>Sally Gronow</i></blockquote>
                 </small>
 
                 <div className={footerStyles.socialIcons}>
