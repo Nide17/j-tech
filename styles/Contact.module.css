@@ -1,5 +1,5 @@
 .contact {
-  height: calc(100vh - 5rem);
+  /* height: calc(100vh - 5rem); */
   padding: 1rem;
   background-color: rgb(238, 238, 238);
 }
