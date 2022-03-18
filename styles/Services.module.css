@@ -80,6 +80,7 @@
     text-align: center;
     margin-left: 0;
     margin-bottom: 1rem;
+    text-decoration: underline;
   }
 
   .services h2 span {
@@ -99,6 +100,7 @@
 
   .listItem h5 {
     margin: 0.4rem auto;
+    font-size: 1.2rem;
   }
 
   .toolsBtn button {

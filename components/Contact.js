@@ -52,7 +52,7 @@ export default function Contact() {
     return (
         <div className={contactStyles.contact} id="contact">
 
-            <h2 className='py-5'>CONTACT US</h2>
+            <h2 className='py-0 py-sm-5'>CONTACT US</h2>
 
             <div className={contactStyles.contactContainer}>
 

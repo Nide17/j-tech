@@ -26,28 +26,29 @@ export default function Footer() {
 
             <div className={`${footerStyles.rightPart} col-12 col-sm-6`}>
                 <small>
-                    <blockquote>~ Good customer service costs less than bad customer service. ~ <i>Sally Gronow</i></blockquote>
+                    <blockquote>~ Good customer service costs less than bad customer service. ~
+                        <br /><i>Sally Gronow</i></blockquote>
                 </small>
 
                 <div className={footerStyles.socialIcons}>
 
-                    <Link href="#"><a className="mx-2">
+                    <Link href="#"><a className="mx-1 mx-sm-2">
                         <FontAwesomeIcon icon={faWhatsapp} />
                     </a></Link>
 
-                    <Link href="#"><a className="mx-2">
+                    <Link href="#"><a className="mx-1 mx-sm-2">
                         <FontAwesomeIcon icon={faLinkedinIn} />
                     </a></Link>
 
-                    <Link href="#"><a className="mx-2">
+                    <Link href="#"><a className="mx-1 mx-sm-2">
                         <FontAwesomeIcon icon={faInstagram} />
                     </a></Link>
 
-                    <Link href="#"><a className="mx-2">
+                    <Link href="#"><a className="mx-1 mx-sm-2">
                         <FontAwesomeIcon icon={faTwitter} />
                     </a></Link>
 
-                    <Link href="#"><a className="mx-2">
+                    <Link href="#"><a className="mx-1 mx-sm-2">
                         <FontAwesomeIcon icon={faFacebook} />
                     </a></Link>
 

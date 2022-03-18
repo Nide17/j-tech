@@ -1,5 +1,4 @@
 .contact {
-  /* height: calc(100vh - 5rem); */
   padding: 1rem;
   background-color: rgb(238, 238, 238);
 }
@@ -24,16 +23,19 @@
 }
 
 .contactDetails {
-width: 50%;
+  width: 50%;
 }
 
 .contactMap {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactMap div div {
-  height: 500px!important;
-  width: 700px!important;
+  height: 500px !important;
+  width: 700px !important;
 }
 
 .contactDetails p {
@@ -150,7 +152,8 @@ span.imgSpan {
 @media screen and (max-width: 1024px) {
 
   .contact h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+    text-decoration: underline;
   }
 
   .contact h2 span {
@@ -167,7 +170,8 @@ span.imgSpan {
 
   .contactDetails {
     width: 100%;
-    padding: 1rem;
+    padding: 0;
+    margin: 2rem 0;
   }
 
   .contactDetails p {
@@ -177,10 +181,10 @@ span.imgSpan {
   }
 
   .reachMe {
-    width: 90%;
-    padding: 0.4rem 3rem;
-    margin: 0 auto;
-    margin-top: 2rem;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    padding: .5rem;
     border: 1px solid rgba(0, 212, 255, 1);
     -webkit-box-shadow: 0px 2px 2.5px -2px #1b4f72,
       1px 1px 3px 1px rgb(220, 249, 255);
@@ -204,7 +208,12 @@ span.imgSpan {
 
   .contactForm {
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 0;
+  }
+
+  .contactMap div div {
+    height: 350px !important;
+    width: 350px !important;
   }
 
   .contactForm form {
@@ -227,5 +236,20 @@ span.imgSpan {
 
   .contactForm button {
     padding: 0.4rem;
+  }
+
+}
+
+@media screen and (max-width: 380px) {
+
+  .contactMap div div {
+    height: 260px !important;
+    width: 260px !important;
+  }
+
+  .reachMeImg {
+    height: 2rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 }

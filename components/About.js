@@ -7,11 +7,12 @@ export default function About() {
 
         <div className={aboutStyles.about} id="about">
 
-            <h2 className='py-4'>ABOUT US</h2>
+            <h2 className='py-3 py-sm-5'>ABOUT US</h2>
 
             <div className={`${aboutStyles.bio} d-flex justify-content-around align-items-center`}>
-                <div className='w-50'>
-                    <p className='pb-4'>
+                <div className={aboutStyles.aboutDet}>
+
+                    <p className='pb-1 pb-sm-4'>
                         J-TECH TECHNOLOGY has been established in February 2022 to provide various ICT and technology solutions including
                         Services activities related to copying, printing and scanning, Repair of machinery, tools and electrical equipments,
                         Repair of electronic and optical equipments, Repair of computers and peripheral equipments,
