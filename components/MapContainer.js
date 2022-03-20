@@ -11,12 +11,12 @@ const MapContainer = (props) => {
       google={props.google}
       zoom={8}
       style={mapStyles}
-      initialCenter={{ lat: -1.9739975, lng: 30.1280828 }}>
-      <Marker position={{ lat: -1.9739975, lng: 30.1280828 }} />
+      initialCenter={{ lat: -1.967222, lng: 30.055556 }}>
+      <Marker position={{ lat: -1.967222, lng: 30.055556 }} />
     </Map>
   );
 }
 
 export default GoogleApiWrapper({
-  apiKey: 'AIzaSyAuhqQ9VOsgbn3FrydS5H7DyBgPO07dWwg'
+  apiKey: 'AIzaSyDL-FYi1r7KNhBhByN2Hz0_e1GVzTTjZ6Q'
 })(MapContainer);
