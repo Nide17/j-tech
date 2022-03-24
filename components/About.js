@@ -1,5 +1,5 @@
-import Image from 'next/image'
 import aboutStyles from '../styles/About.module.css'
+import AboutCarousel from './AboutCarousel'
 
 export default function About() {
 
@@ -26,7 +26,7 @@ export default function About() {
 
                 </div>
                 <div className={aboutStyles.profilePic}>
-                    <Image src="/images/jtechltd.jpg" alt="profilepic" width={560} height={480} />
+                    <AboutCarousel />
                 </div>
 
             </div>
